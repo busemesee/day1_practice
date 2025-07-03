@@ -1,110 +1,80 @@
-/* === GENEL RESET === */
+/* File: style.css */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
-/* === BODY ORTALAMA === */
 body {
   height: 100vh;
+  background: #e3f2fd;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #f2f2f2;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* === FORM CONTAINER === */
+/*  FORM KUTUSU  */
 .form-container {
-  background-color: white;
+  background: white;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
 }
 
-/* === HEADERS === */
-.form-container h1 {
-  margin-bottom: 24px;
+/*  BAŞLIK  */
+.form-title {
+  font-size: 26px;
+  color: #0d47a1;
   text-align: center;
-  color: #333;
+  margin-bottom: 24px;
 }
 
-/* === FORM GROUPS === */
-.form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-/* === LABELS === */
-label {
-  margin-bottom: 6px;
-  font-weight: bold;
-  color: #444;
-}
-
-/* === INPUTS === */
+/* INPUTLAR  */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  padding: 10px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 14px;
-  transition: border-color 0.3s ease;
+  font-size: 16px;
 }
 
 input:focus {
-  border-color: #5a67d8;
+  border-color: #1e88e5;
   outline: none;
 }
 
-/* === CHECKBOX === */
-.checkbox-group {
-  flex-direction: row;
-  align-items: center;
-}
-
-.checkbox-group label {
-  margin-left: 8px;
-  font-weight: normal;
-}
-
-/* === BUTTON === */
+/* BUTON  */
 button {
   width: 100%;
   padding: 12px;
-  background-color: #5a67d8;
+  background-color: #1e88e5;
   color: white;
   border: none;
   border-radius: 6px;
-  font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #434190;
+  background-color: #1565c0;
 }
 
-/* === FORM LINK === */
-.form-link {
+/* LİNKLER */
+a {
+  display: block;
+  margin-top: 10px;
   text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
-}
-
-.form-link a {
-  color: #5a67d8;
+  color: #1e88e5;
   text-decoration: none;
-  font-weight: bold;
 }
 
-.form-link a:hover {
-  text-decoration: underline;
+a:hover {
+  color: #0d47a1;
 }
-
